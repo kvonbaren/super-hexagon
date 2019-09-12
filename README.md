@@ -48,12 +48,35 @@ Unter "/Images/" befinden sich 10 Bilder von dem Dreieck.
 Es wird solange ein neues Bild des Dreieckes benutzt, bis eines an einer Position einem threshold genügt, also genau genug das Dreieck gefunden wurde.
 Hierzu wird an nahezu jeder Bildposition mittels folgener Funktion ein Wert bestimmt.
 
-<img src="Tutorial/10.png" width=256> 
-Nachdem das Dreieck gefunden wurde, wird dieses noch überdeckt, um später bei der Bestimmung der Distanzen nicht weitere Ungenauigkeiten zu erzeugen.
+<img src="Tutorial/10.png" width=512> 
 
+Nachdem das Dreieck gefunden wurde, wird dieses noch überdeckt, um später bei der Bestimmung der Distanzen nicht weitere Ungenauigkeiten zu erzeugen.
 
 <img src="Tutorial/6.png" width=1080> 
 
+#### Bestimmung der Distanzen
+Nun haben wir alle notwendigen Informationen um die Distanzen der jeweiligen Wände auf den 6 Sektoren zu bestimmen.
+Hierzu wird ein der Spielwinkel+30° benutzt, um mittig auf dem Sektor zu sein, und vom Mittelpunkt des Bildes zum Rand des Bildes iterriert.
+Hierbei werden die Länge der ersten Folge von "1" Pixeln gezählt (rot im Bild) und die Länge der darauf folgenen "0" Pixel (grün im Bild)
 <img src="Tutorial/7.png" width=1080> 
 
+Dies wird für alle 6 Sektoren durchgeführt und zuletzt noch für den "Spielerwinkel".
+
 <img src="Tutorial/8.png" width=1080> 
+
+#### Fazit
+
+Mit diesen 2x7 Längen und den 7 dazugehörigen Winkeln sind genügend Datenpunkte spezifiziert um das Spiel erfolgreich Spielen zu können.
+Alle Zahlenwerte werden anschließend noch normiert und werden dann als Input für das Neuronale Netzwerk genutzt,
+welches als Output 3 Zahlenwerte liefert, wobei die Position des größten Zahlenwertes die Aktion impliziert.
+
+Mit diesem Spielzustand als Beispiel würden die Input sein:
+
+[0.33611111 0.008      0.808      0.16944444 0.064      0.48
+ 0.00277778 0.016      0.792      0.         0.016      0.792
+ 0.16388889 0.008      0.536      0.33055556 0.064      0.752
+ 0.49722222 0.024      0.552     ]
+ 
+ und der Output:
+ [[8.7552023e-04 9.9912447e-01 2.5644967e-08]]
+ 
