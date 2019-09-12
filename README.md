@@ -88,5 +88,7 @@ Mit diesem Spielzustand als Beispiel würden die Input sein:
   0.49722222,   0.024,      0.552]
  
  und der Output:
+ 
  [8.7552023e-04,   9.9912447e-01,    2.5644967e-08]
+ 
  Somit würde das Netzwerk die Aktion Warten durchführen.
