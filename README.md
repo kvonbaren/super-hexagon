@@ -7,8 +7,6 @@ Some Text
 <img src="Tutorial/1.png" width=720> 
 
 
-<img src="Tutorial/1.png" width=720> 
-
 <img src="Tutorial/2.png" width=720> 
 
 <img src="Tutorial/3.png" width=720> 
