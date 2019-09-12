@@ -45,7 +45,11 @@ Indem die Eckpunkte in Polarkoordinaten schreibweise betrachtet werden, erhalten
 #### Finden des Dreiecks (Spielers)
 Da das Konturen finden für 3 Ecke zu unzuverlässig war in meinen Implementierungen habe ich mich für das Vergleichen mit Vorlagen entschieden.
 Unter "/Images/" befinden sich 10 Bilder von dem Dreieck.
+Es wird solange ein neues Bild des Dreieckes benutzt, bis eines an einer Position einem threshold genügt, also genau genug das Dreieck gefunden wurde.
+Hierzu wird an nahezu jeder Bildposition mittels folgener Funktion ein Wert bestimmt.
 
+<img src="Tutorial/1.png" width=1080> 
+Nachdem das Dreieck gefunden wurde, wird dieses noch überdeckt, um später bei der Bestimmung der Distanzen nicht weitere Ungenauigkeiten zu erzeugen.
 
 
 <img src="Tutorial/6.png" width=1080> 
