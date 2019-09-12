@@ -73,11 +73,17 @@ welches als Output 3 Zahlenwerte liefert, wobei die Position des größten Zahle
 Mit diesem Spielzustand als Beispiel würden die Input sein:
 
  [0.33611111   0.008      0.808
+ 
   0.16944444   0.064      0.48
+  
   0.00277778   0.016      0.792
+  
   0            0.016      0.792
+  
   0.16388889   0.008      0.536
+  
   0.33055556   0.064      0.752
+  
   0.49722222   0.024      0.552]
  
  und der Output:
