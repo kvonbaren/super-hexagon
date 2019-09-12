@@ -69,6 +69,7 @@ Dies wird für alle 6 Sektoren durchgeführt und zuletzt noch für den "Spielerw
 Mit diesen 2x7 Längen und den 7 dazugehörigen Winkeln sind genügend Datenpunkte spezifiziert um das Spiel erfolgreich Spielen zu können.
 Alle Zahlenwerte werden anschließend noch normiert und werden dann als Input für das Neuronale Netzwerk genutzt,
 welches als Output 3 Zahlenwerte liefert, wobei die Position des größten Zahlenwertes die Aktion impliziert.
+Wobei 0 als Drehung gegen den Uhrzeigersinn, 1 als Warten und 2 als Drehung mit dem Uhrzeigersinn gewählt wurde.
 
 Mit diesem Spielzustand als Beispiel würden die Input sein:
 
@@ -78,14 +79,14 @@ Mit diesem Spielzustand als Beispiel würden die Input sein:
   
   0.00277778,   0.016,      0.792,
   
-  0,            0.016,      0.792,
+  0,            0.016,      0.792, (Entspricht der Darstellung in Bild 8)
   
   0.16388889,   0.008,      0.536,
   
-  0.33055556,   0.064,      0.752,
+  0.33055556,   0.064,      0.752, (Entspricht der Darstellung in Bild7)
   
   0.49722222,   0.024,      0.552]
  
  und der Output:
  [8.7552023e-04,   9.9912447e-01,    2.5644967e-08]
- 
+ Somit würde das Netzwerk die Aktion Warten durchführen.
