@@ -79,7 +79,7 @@ Mit diesem Spielzustand als Beispiel würden die Input sein:
   
   0.00277778,   0.016,      0.792,
   
-  0,            0.016,      0.792, (Entspricht der Darstellung in Bild 8)
+  0,           0.016,      0.792, (Entspricht der Darstellung in Bild 8)
   
   0.16388889,   0.008,      0.536,
   
