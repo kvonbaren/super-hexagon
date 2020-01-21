@@ -52,8 +52,6 @@ Hierzu wird an nahezu jeder Bildposition mittels folgener Funktion ein Wert best
 
 Nachdem das Dreieck gefunden wurde, wird dieses noch überdeckt, um später bei der Bestimmung der Distanzen nicht weitere Ungenauigkeiten zu erzeugen.
 
-<img src="Tutorial/6.png" width=1080> 
-
 #### Bestimmung der Distanzen
 Nun haben wir alle notwendigen Informationen um die Distanzen der jeweiligen Wände auf den 6 Sektoren zu bestimmen.
 Hierzu wird ein der Spielwinkel+30° benutzt, um mittig auf dem Sektor zu sein, und vom Mittelpunkt des Bildes zum Rand des Bildes iterriert.
