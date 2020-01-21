@@ -48,7 +48,6 @@ Unter "/Images/" befinden sich 10 Bilder von dem Dreieck.
 Es wird solange ein neues Bild des Dreieckes benutzt, bis eines an einer Position einem threshold genügt, also genau genug das Dreieck gefunden wurde.
 Hierzu wird an nahezu jeder Bildposition mittels folgener Funktion ein Wert bestimmt.
 
-<img src="Tutorial/10.png" width=512> 
 
 Nachdem das Dreieck gefunden wurde, wird dieses noch überdeckt, um später bei der Bestimmung der Distanzen nicht weitere Ungenauigkeiten zu erzeugen.
 
